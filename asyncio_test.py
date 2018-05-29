@@ -1,5 +1,9 @@
 # -*- coding:utf-8 -*- 
 
+'''
+可以把多个协程封装到一个tasks里面，然后并发执行
+'''
+
 import asyncio
 
 async def wget(host):

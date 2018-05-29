@@ -1,0 +1,16 @@
+该文件夹的.py文件来自于以下网站的学习过程中的练习：
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
+
+1.Q：双击[.py]文件运行时，出现python shell窗口一闪而过？
+  A：在代码末尾加上input（）	（reason：代码运行完成后自动退出）
+
+2.如何在完成操作后不退出程序、再次执行代码？
+  A：Use while-loop(combine with Boolean Mark)
+
+
+
+
+https://blog.csdn.net/yitiaodashu/article/details/79023987
+———————————————————————————————————————————
+经典书籍/文章：
+《》

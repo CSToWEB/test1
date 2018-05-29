@@ -1,35 +1,24 @@
 # -*- coding:utf-8 -*-
 
-# import logging
-# def foo(s):
-#     n = int(s)
-#     assert n != 0, 'n is zero!'
-#     return 10 / n
+import re, time
+from datetime import datetime
 
-# def main():
-#     foo('0')
+# # split string
+# s1 = 'a b c  d'
+# print(s1.split(' '))
 
-# main()
+# # match string
+# n1 = '010-12345'
+# n2 = '010，12345'
+# tele = re.compile(r'^\d{3}\-\d{3,8}$')
+# R1 = re.match(r'^\d{3}\-\d{3,8}$', n1)
+# R2 = tele.match(n1)
+# print(R1)
+# print(R2)
 
-# logging.basicConfig(level=logging.INFO)
-
-# s = '0'
-# n = int(s)
-# logging.info('n = %d' % n)
-# print(10 / n)
-
-
-import re
-
-# split string
-s1 = 'a b c  d'
-print(s1.split(' '))
-print()
-
-# match string
-n1 = '010-12345'
-n2 = '010 12345'
-R1 = re.match(r'^\d{3}\-\d{3,8}$', n1)
-R2 = re.match(r'^\d{3}\-\d{3,8}$', n2)
-print(R1)
-print(R2)
+t1 = time.time()
+dt1 = datetime.now()
+print(datetime.fromtimestamp(t1))
+print(dt1.timestamp())
+#print(dt1.strftime('%Y/%m/%d %H:%M:%S'))
+print(dt1.strftime('%c | %x'))
