@@ -1,9 +1,8 @@
-# -*- coding:utf-8 -*- 
+# -*- coding:utf-8 -*-
 
 '''
 可以把多个协程封装到一个tasks里面，然后并发执行
 '''
-
 import asyncio
 
 async def wget(host):
@@ -24,4 +23,8 @@ async def wget(host):
 loop = asyncio.get_event_loop()
 tasks = [wget(host) for host in ['www.sina.com.cn', 'www.sohu.com', 'www.163.com']]
 loop.run_until_complete(asyncio.wait(tasks))
+<<<<<<< HEAD
 loop.close()
+=======
+loop.close()
+>>>>>>> eb28e78c7de13457707f5b278530bfde28dfd53c
